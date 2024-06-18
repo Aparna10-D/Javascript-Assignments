@@ -42,26 +42,31 @@ for(var i in employee1){
         }
     }
 }
+console.log(employee2);
+console.log(employee2.name);
+console.log(employee2.age);
+console.log(employee2.mobile);
+for(var i in employee2){
+    var emp2 = employee2[i];
+    if(typeof emp2 == Array || emp2 instanceof Object){
+        for(var i in emp2){
+            console.log(emp2[i]);
+        }
+    } 
+}
+
+console.log(employee3);
+console.log(employee3.name);
+console.log(employee3.age);
+console.log(employee3.mobile);
+for(var i in employee3){
+    var emp3 = employee3[i];
+    if(typeof emp3 == Array || emp3 instanceof Object){
+        for(var i in emp3){
+            console.log(emp3[i]);
+        }
+    } 
+}
 
 
-
-// for(var i in employee2){
-//     var emp1 = employee2[i];
-//     if(typeof emp1 == Array || emp1 instanceof Object){
-//         for(var i in emp1){
-//             console.log(emp1[i]);
-//         }
-//     } 
-// }
-// console.log(employee2[i]);
-
-// for(var i in employee3){
-//     var emp2 = employee3[i];
-//     if(typeof emp2 == Array || emp2 instanceof Object){
-//         for(var i in emp2){
-//             console.log(emp2[i]);
-//         }
-//     } 
-// }
-// console.log(employee3[i]);
 
